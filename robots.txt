@@ -1,0 +1,11 @@
+Host: https://julandre.ru
+Sitemap: https://julandre.ru/sitemap.xml
+User-agent: *
+Disallow: *.js
+Disallow: *.css
+Disallow: *.php
+Disallow: *.ttf
+Disallow: *.jpg 
+Disallow: *.png
+Disallow: /almaz.html
+Disallow: /l-xl.html

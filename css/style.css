@@ -1,0 +1,479 @@
+/*Таблица стилей главной страницы*/
+
+@font-face {
+    font-family: Post Pixel-7; text-align: center;
+    src: url(../fonts/8135.ttf); 
+   }
+
+ 
+html,
+body {background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,1); 
+   height: 100%; width: calc(100% + 10px);
+   font-family: Post Pixel-7; margin: -10px;
+}
+
+
+.box1 {display: flex; justify-content: space-between; 
+    background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,1); 
+    width: 100%; height: 100%; z-index: -10;}
+
+#nav {position: fixed; left: 0; top: 0;
+    background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+    width: 12%; height: 100%; padding: 8% 0 0 0;
+	  color: white; font:1.8em Post Pixel-7; line-height: 3.2em;
+    text-align: left; 
+    z-index: 10;} 
+
+#nav li a {color: white;
+   text-align: left; 
+   text-decoration: none;} 
+
+#nav li a:hover{color: white;
+   text-align: left; 
+   text-decoration: underline;}  
+
+a {text-decoration: none;}
+
+
+#main {display: flex; justify-content: center; flex-wrap: wrap; flex-direction: row;
+   margin: 0 2% 0 15%; padding: 10% 2% 0 2%; 
+   background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+   width: 51%; height: auto;}
+
+#doble_logo {display: none;}
+
+#name {display: none; 
+   margin: 0;  
+   background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+   width: 100%; height: 120px;
+   text-shadow: rgba(250,250,250,0.1) 1.5px 1.5px 0, rgba(250,250,250,0.3) 3px 3px 0, 
+                 rgba(250,250,250,0.1) 5px 5px 0; z-index: 0;}
+
+@font-face {
+    font-family: Post Pixel-7; text-align: center;
+    src: url(../fonts/8135.ttf);}
+   
+
+#print1 {display: flex; flex-direction: row; flex-wrap: wrap;
+    width: 100%; height: auto; margin: 0 2% 0 2%;
+    color: white; font:2.8em Post Pixel-7; 
+    text-align: center; justify-content: center; opacity: 0.8; 
+    z-index: 1;}
+
+#print2 {display: flex; flex-direction: row; flex-wrap: wrap;
+    width: 100%; height: auto; margin: 0 2% 0 2%;
+    color: white; font:2.0em Post Pixel-7; 
+    text-align: center; justify-content: center; opacity: 0.8; 
+    z-index: 1;}
+
+svg{
+    width: 95%;
+    height: 120px;
+    display: block;
+    position: relative;
+    overflow: hidden; 
+    margin: 0 auto;
+    background: rgba(0,5,13,0.1); 
+}
+
+.aside {background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+    width: 30%; height: auto; 
+    z-index: 10;
+    position: relative; 
+    margin: 0 2% 0 0; 
+    padding: 1% 0 0 0;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.8);}
+
+.div-style {position: relative;  opacity: 0.7;
+    text-align: center; 
+    width: 100%; 
+    border-radius:50%;
+    box-shadow: 15px 15px 15px rgba(89,178,204,0.7);
+    padding:0;
+    margin:90px 0 0 0;
+    z-index: 0;}
+
+            .img-style {width: 100%;
+                margin-top: 8px;
+                border-radius:50%; 
+                box-shadow:3px 3px 3px rgba(0,30,78,1);
+                padding:0;
+                margin:0;}
+
+            .img-style.hidden {position: absolute; 
+                left: 0%; top: 0%;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                z-index: -1000;}
+
+
+#print3 {
+    position: absolute;
+	width: 40%;
+	bottom: 8%; right: 30%; 
+	color: black;
+    background-color: orange; opacity: 0.4;
+	text-shadow: 0px 1px 2px #bbb;
+	box-shadow: 0px 2px 4px rgb(89,178,204);
+    border-radius: 1px;
+	   
+    font: 1em Post Pixel-7; font-weight: 700; line-height: 2em;
+    text-align: center;
+	  z-index: 5;}
+
+#print3:after {
+	  content: ' ';
+	  position: absolute;
+	  width: 0;
+	  height: 0;
+	  left: 0px;
+	  top: 100%;
+	  border-width: 5px 10px;
+	  border-style: solid;
+    border-radius: 1px;
+	  border-color: rgb(89,178,204) rgb(89,178,204) transparent transparent;
+    z-index: -6;}
+
+#print3:before {
+	  content: ' ';
+	  position: absolute;
+	  width: 30px;
+	  height: 0;
+	  left: -30px;
+	  top: 12px;
+	  border-width: 15px 10px;
+	  border-style: solid;
+      border-radius: 1px;
+	  border-color: orange orange orange transparent; 
+      z-index: -6;}
+
+#id4 {
+	  position: absolute;
+	  width: 40%; height: 32px;
+	  background-color: orange; opacity: 0.4;
+      border-radius: 1px;
+	  bottom: 8%; right: 30%;
+	  text-shadow: 0px 1px 2px #bbb;
+	  box-shadow: 0px 2px 4px rgb(89,178,204); 
+	  z-index: -10;}
+
+#id4:after {
+	  content: ' ';
+	  position: absolute;
+	  width: 0;
+	  height: 0;
+	  right: 0px;
+	  top: 100%;
+	  border-width: 5px 10px;
+	  border-style: solid;
+      border-radius: 1px;
+	  border-color: rgb(89,178,204) transparent  transparent rgb(89,178,204);}
+
+#id4:before {
+	  content: ' ';
+	  position: absolute;
+	  width: 30px;
+	  height: 0;
+	  right: -30px;
+	  top: 12px;
+	  border-width: 15px 10px;
+	  border-style: solid;
+      border-radius: 1px;
+	  border-color: orange transparent orange orange;}
+
+
+ul {list-style-type: square; /* Квадратные маркеры */ color: white;}
+
+
+
+/*Не главные страницы*/
+
+.box2 {display: flex; flex-direction: column;  flex-wrap: wrap; 
+  justify-content: center;
+  width: 100%; height: auto; 
+  background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,1); 
+  z-index: -10;}
+
+#about {display: flex; flex-direction: row; flex-wrap: wrap;
+  width: 83%; height: auto; margin: 0 2% 0 15%; 
+  background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.8); 
+  z-index: 1;}
+
+#portfolio {display: flex; flex-direction: row; flex-wrap: wrap; 
+  width: 83%; height: auto; margin: 0 2% 0 15%; 
+  background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.8); 
+  z-index: 1;}
+
+
+/*#service {display: flex; flex-direction: row; flex-wrap: wrap; text-align: justify;
+  width: 83%; height: auto; margin: 0 2% 0 15%; 
+  background: rgb(0,5,13) /* для старых браузеров /; background: rgb(0,5,13,0.1);  
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.8); 
+  z-index: 1;}*/
+
+
+#contact {display: flex; flex-direction: row; flex-wrap: wrap; 
+  width: 83%; height: auto; margin: 0 2% 0 15%; justify-content: center;
+  background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.8); 
+  z-index: 1;}
+
+h1 {color: white;
+  font:2em Post Pixel-7;
+  text-align: center;}
+
+h3 {color: white;
+  font:2em Post Pixel-7;
+  text-align: center; text-decoration: underline;
+  text-shadow: rgba(250,250,250,0.4) 1px 1px 0, rgba(250,250,250,0.4) 2px 2px 0;}
+
+h4 {color: white;
+  font:1.6em Post Pixel-7;
+  text-align: center; text-decoration: none;}
+
+p {color: white;
+  font:1.3em Post Pixel-7; line-height: 1.3em;
+  text-align: justify;}   
+
+
+p a {color: white;
+  font:1em Post Pixel-7; line-height: 1em;
+  text-align: justify;}
+
+.form p {color: white;
+  font: 1.3em Post Pixel-7;
+  text-align: center;}
+
+footer p {color: white;
+  font: 0.8em Post Pixel-7;
+  text-align: right;}
+
+
+.heading1 {display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; 
+  justify-content: center; padding: 20px 15% 0 15%;}
+
+.heading2 {display: flex; flex-direction: row;  
+  width: 35%; height: 200px; margin: auto; text-align: center; justify-content: center; 
+  opacity: 1;}
+
+.heading2 img {border-radius: 5%; box-shadow: 1.5px 1.5px 1.5px rgba(10,10,10,1), 6px 6px 6px rgba(209,209,209,0.5);}
+
+.heading3 {display: flex; flex-direction: row; justify-content: center; 
+  width: 65%; height: 200px; margin: auto; text-align: center; opacity: 1;}
+
+.my_description {display: block; 
+  width: 90%; margin: auto; padding: 1% 5% 1% 5%;
+  opacity: 1;}
+
+.portfolio1 {display: flex; flex-direction: row; flex-wrap: wrap; width: 90%; 
+  justify-content: center; padding: 10px 5% 0 5%;}
+
+.project {display: flex; flex-direction: row; justify-content: center; padding: 0; margin: auto;
+  width: 50%; height: auto; justify-content: space-between; opacity: 0.5; 
+  z-index: 0;}
+
+.project:hover {display: flex; flex-direction: row; justify-content: center; padding: 0; margin: auto;
+  width: 50%; height: auto; text-align: center; opacity: 1;
+  z-index: 0;}
+
+
+
+.project img {border-radius: 5%; box-shadow: 1.5px 1.5px 1.5px rgba(0,30,78,1), 8px 8px 8px rgba(89,178,204,0.5);
+  width: 100%; margin: 0;}
+
+
+.form{display: flex; flex-direction: column; justify-content: center;
+  width: 650px; margin: 0; padding: 5%; 
+  background: rgb(29,95,125) /* для старых браузеров */; background: rgb(29,95,125,0.8); 
+  box-shadow: 1.5px 1.5px 1.5px rgba(0,30,78,1), 8px 8px 8px rgba(89,178,204,0.5);
+  border-radius: 5px;
+  z-index: 1;}
+
+fieldset {border-radius: 5px;}
+
+.js-input-2 {width: 100%; height: 28px; margin: auto;
+  background: rgb(29,95,125) /* для старых браузеров */; background: rgba(29,95,125,0.1); 
+  box-shadow: 5px 5px 5px rgba(0,0,0,1) inset; 
+  border-radius: 5px; font:1em Post Pixel-7; 
+  color: white; font-weight: 500; 
+  z-index: 0}
+.js-input-3 {width: 100%; height: 90px; margin: auto;
+  background: rgb(29,95,125) /* для старых браузеров */; background: rgba(29,95,125,0.1); 
+  box-shadow: 5px 5px 5px rgba(0,0,0,1) inset;  
+  border-radius: 5px; font:1em Post Pixel-7; 
+  color: white; font-weight: 500; 
+  z-index: 0}
+
+.button2 {width: 100%; height: 50px; margin: auto;
+  background: rgb(4,8,15) /* для старых браузеров */; background: rgba(4,8,15,0.1); 
+  box-shadow: 5px 5px 5px rgba(0,0,0,1); 
+  border-radius: 5px; font:1.2em Post Pixel-7; 
+  font-weight: 500; border-radius: 5px;
+  color: rgb(250,250,250) /* для старых браузеров */; color: rgba(250,250,250,1); z-index: 0;}
+.button2:hover {width: 100%; height: 50px; margin: auto;
+  background: rgb(29,95,125) /* для старых браузеров */; background: rgba(29,95,125,0.6);  
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8) inset; 
+  border-radius: 5px; font: 1.2em Post Pixel-7; 
+  color: rgb(250,250,250) /* для старых браузеров */; color: rgba(250,250,250,1); z-index: 0;
+  text-shadow: 3px 3px #191970;
+  font-weight: 800; border-radius: 5px;
+  text-align: center; z-index: 0;}
+
+footer {width: auto; height: auto; margin: 5% 2% 0 15%; 
+  background: rgb(0,5,13) /* для старых браузеров */; background: rgba(0,5,13,0.1); 
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.8); 
+  z-index: 1;}
+
+/*Медиазапросы*/
+ 
+@media only screen and (max-width: 1146px){
+ 
+#print1 {font:2.2em Post Pixel-7;}
+#print2 {font:1.8em Post Pixel-7;}
+#print3 {width: 46%;}
+#id4 {width: 46%;}
+#nav {font:1.4em Post Pixel-7; line-height: 2.8em;} 
+.compensator {height: 5%;}
+.form{width: 550px;}
+}
+
+
+@media only screen and (max-width: 992px){
+
+#nav {font: 1.2em Post Pixel-7; line-height: 2.6em;} 
+#print1 {font:2em Post Pixel-7;}
+#print2 {font:1.6em Post Pixel-7;}
+#print3 {width: 48%; font:0.9em Post Pixel-7; line-height: 2em;}
+#id4 {width: 48%;}
+.compensator {height: 6%;}
+
+/*Неглавные страницы*/
+.form{width: 600px;}
+.form p {font: 1.4em Post Pixel-7;}
+h4 {font:1.4em Post Pixel-7;}
+}
+
+
+@media only screen and (max-width: 910px){
+#nav {font:1.1em Post Pixel-7; line-height: 3.2em;}
+#print1 {font:1.9em Post Pixel-7;}
+#print2 {font:1.5em Post Pixel-7;}
+.compensator {height: 8%;}
+}
+
+
+@media screen only (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: 800px) {
+   #photo {display: none;} /*для IE-10, IE-11, менее 800px*/
+}
+
+
+@media only screen and (max-width: 850px){
+
+#nav {font:0.9em Post Pixel-7; line-height: 4.2em;} 
+#print1 {font:1.7em Post Pixel-7;}
+#print2 {font:1.4em Post Pixel-7;}
+#print3 {width: 50%; font:0.8em Post Pixel-7; line-height: 2em;}
+#id4 {width: 50%;}
+.form{width: 500px;}
+.form p {font: 1.3em Post Pixel-7;}
+.js-input-2 {font:1.1em Post Pixel-7;}
+.js-input-3 {font:1.1em Post Pixel-7;}
+.button2 {font:1.1em Post Pixel-7;}
+.button2:hover {font:1.1em Post Pixel-7;}
+h4 {font:1.3em Post Pixel-7;}
+}
+
+
+@media only screen and (max-width: 748px){
+
+#nav {width: 21%; font:1.4em Post Pixel-7; line-height: 2.8em;} 
+#main {margin: 0 2% 0 25%; width: 73%;}
+.aside {display: none;}
+.corner-ribbon{z-index: 0; opacity: 0.5;}
+#print1 {font:2.2em Post Pixel-7;}
+#print2 {font:1.8em Post Pixel-7;}
+#print3 {font: 1em Post Pixel-7; line-height: 2.5em;}
+
+/*Неглавные страницы*/
+#about {width: 73%; margin: 0 2% 0 25%;}
+#portfolio {width: 73%; margin: 0 2% 0 25%;}
+#service {width: 73%; margin: 0 2% 0 25%;}
+#contact {width: 73%; margin: 0 2% 0 25%;}
+.heading2, .heading3 {height: 150px;}
+.project {width: 100%;}
+.project:hover {width: 100%;}
+.form{width: 400px;}
+
+h1 {font:1.6em Post Pixel-7; line-height: 1.6;}
+h3 {font:1.4em Post Pixel-7; text-decoration: underline;}
+p {font:1.2em Post Pixel-7;}  
+
+.form p {font: 1.2em Post Pixel-7;}
+.js-input-2 {font:1em Post Pixel-7;}
+.js-input-3 {font:1em Post Pixel-7;}
+.button2 {font:1em Post Pixel-7;}
+.button2:hover {font:1em Post Pixel-7;}
+h4 {font:1.2em Post Pixel-7;}
+footer {display: none;}
+}
+
+@media only screen and (max-width: 640px){
+
+#nav {font:1.3em Post Pixel-7; line-height: 2.6em;} 
+#print1 {font:2em Post Pixel-7;}
+#print2 {font:1.7em Post Pixel-7;}
+.form {width: 350px;}
+}
+
+@media only screen and (max-width: 600px){
+
+#nav {font: 1.2em Post Pixel-7; line-height: 2.8em;} 
+#name {width: 80%; margin: 0 10% 0 10%;}
+#print1 {width: 80%; margin: 0 10% 0 10%; font:1.9em Post Pixel-7;}
+#print2 {width: 80%; margin: 0 10% 0 10%; font:1.5em Post Pixel-7;}
+
+/*Неглавные страницы*/
+.heading2, .heading3 {height: 120px;}
+.form {width: 330px;}
+h1 {font:1.4em Post Pixel-7; line-height: 1.4em;}
+h3 {font:1.4em Post Pixel-7;}
+p {font:1em Post Pixel-7;} 
+}
+
+@media only screen and (max-width: 532px){
+
+#nav {font: 1.1em Post Pixel-7; line-height: 3.2em;}
+#print1 {font:1.7em Post Pixel-7;}
+#print2 {font:1.4em Post Pixel-7;}
+#print3 {font: 0.8em Post Pixel-7; font-weight: 700; line-height: 2.5em;
+  text-align: center;}
+.form{width: 300px;}  
+}
+
+
+@media only screen and (max-width: 480px){
+#nav {display: none;}
+#main {margin: 0; width: 100%; height: auto;}
+#doble_logo {display: block; padding: 20%;}
+.form{width: 330px;}
+
+/*Неглавные страницы*/
+#about {margin: 0; width: 90%; padding: 0 5% 0 5%;}
+#portfolio {margin: 0; width: 90%; padding: 0 5% 0 5%;}
+#service {margin: 0; width: 90%; padding: 0 5% 0 5%;}
+#contact {margin: 0; width: 90%; padding: 0 5% 0 5%;}
+}
+
+@media only screen and (max-width: 380px){
+  .form{width: 280px;}
+}
+
+@media only screen and (max-width: 300px){
+  .form{width: 240px;}
+}
+
+@media only screen and (max-width: 260px){
+  .form{width: 200px;}
+}

@@ -1,0 +1,26 @@
+/*Таблица стилей демонстрации адаптивного дизайна*/
+
+body {display: block; text-align: center;
+  	background: rgb(0,5,13) /* для старых браузеров */; background: rgb(0,5,13,1); 
+  	padding: 3% auto auto auto;}
+
+.figure {width: auto; margin: 3%;}
+.box {width: auto; height: auto; margin: 1%; border-radius: 3px;}
+img {border-radius: 3px;}
+  
+a {text-decoration: none;}
+
+@import "compass/css3";
+@font-face {
+    font-family: Post Pixel-7; text-align: center;
+    src: url(../fonts/8135.ttf);}
+
+h5 {color: white;
+  	font:2em Post Pixel-7; line-height: 0.1em;
+    text-align: center; text-decoration: none;}
+h5:hover {color: white;
+    font:2em Post Pixel-7; line-height: 0.1em;
+    text-align: center; text-decoration: underline;}
+
+
+  
